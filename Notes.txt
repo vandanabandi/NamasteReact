@@ -1,0 +1,55 @@
+1. data displays in the order of <DIV>
+id will be given in ""
+const will not be in ""
+css ref is placed in <head>
+CDN links are used to import react 
+react is JS library used for creating user interfaces
+react-dom is for rendering those components to the browser
+so render element(createroot) is created using reactDOM
+
+
+
+2. create github repository and push the code
+
+        git installing
+        git commit -m "first commit"
+        git branch -M main
+        git remote add origin https://github.com/vandanabandi/NamasteReact.git
+        git push -u origin main
+
+
+Pacakge.json is a config file of npm that is created after installing npm
+npm takes care of the versions of the dependency packages through package.json file
+there are 2 types of dependencies
+dev -generally req in dev phase
+normal - used in prod also
+npm install -D parcel
+-D installs dev dependencies
+parcel is bundler used for minification
+parcel does dev build,hosts to local server
+parcel refreshes browser automatically =>HMR(hot module replacewment) by using file watching algorithm written using c++
+parcel does the faster builds using cache(.parcel-cache)
+parcel bundles,compress,minification,image optimization by using other libraries such as file watching algo etc
+parcel does differential bundling to support older browsers
+parcel does consistent hashing, code splitting,diagnostics,better error displaying,helps to host in https,tree shaking - remove unused code
+parcel does diff deb and prod bundles
+^ :parcel upgrades to latest minor versions automatically Ex: parcel :"^2.8.3" is installed and 
+    when new version 2.8.4 of parcel is released the ^ helps in upgrading to 2.8.4 automatically
+~ :parcel upgrades to latest major versions automatically Ex: parcel :"~2.8.3" is installed and 
+    when new version 3.0.0 of parcel is released the ^ helps in upgrading to 3.0.0 automatically
+always suggested to use ^ instead of ~
+package-lock.Json : keeps exact version that is installed and make sure same version is installed
+    in prod also when code moved to prod as package.json has ^ and may install latest version available.
+when a dependency is installed in to our project node_modules is created.
+node_modules contains all the code(is like db) of the packages(dependencies) our project needs ex: parcel so that we can use them
+transitive dependencies: our project depends on parcel and parcel depends on other packages and other packages depends on other packages
+it is not required to push node_modules to git as it can be recreated using npm install and this created node_modules using package.json
+npx is similar to npm
+npx means executing a package
+npx parcel index.html => creates.parcel-cache and .dist folders and hosts project to localhost port(can be seen changes in the url)
+React can be injected to the project usinf CDN links or NPM
+npm install react
+now node_modules contains react folder also
+npm install react-dom is same as npm i react-dom
+now we have to mention import React from "react" => react is the folder in node_modules
+npx parcel build index.html
