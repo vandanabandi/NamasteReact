@@ -11,19 +11,22 @@ so render element(createroot) is created using reactDOM
 
 2. create github repository and push the code
 
-        git installing
-        git commit -m "first commit"
+        git init 
+        git config --global user.email "bvandana43@gmail.com"
+        git config --global user.name "Vandana"  
+        git add .
+        git commit -m "Episode 01"
         git branch -M main
         git remote add origin https://github.com/vandanabandi/NamasteReact.git
         git push -u origin main
 
-
+npm init
 Pacakge.json is a config file of npm that is created after installing npm
 npm takes care of the versions of the dependency packages through package.json file
 there are 2 types of dependencies
 dev -generally req in dev phase
 normal - used in prod also
-npm install -D parcel
+npm install -D parcel  => Pacakge-lock.json is created
 -D installs dev dependencies
 parcel is bundler used for minification
 parcel does dev build,hosts to local server
